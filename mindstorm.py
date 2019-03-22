@@ -21,11 +21,14 @@ def draw_art():
     brad    =   turtle.Turtle() #initialise function def init
     brad.shape("turtle")
     brad.color("yellow")
-    draw_square(brad)
+    brad.speed(0)
+    for i   in  range(1,36):
+        draw_square(brad)
+        brad.right(10)
 
-    angie   =   turtle.Turtle()
-    draw_circle(angie)
-    window.exitonclick()
+    #angie   =   turtle.Turtle()
+    #draw_circle(angie)
+    #window.exitonclick()
 
 draw_art()
     
